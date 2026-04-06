@@ -5,7 +5,7 @@ export class CreateTenantDto {
   @ApiProperty({ example: 'Acme Corporation' })
   @IsString()
   @MinLength(2)
-  name: string;
+  name!: string;
 
   @ApiPropertyOptional({ example: 'acme-corp' })
   @IsString()
@@ -28,17 +28,17 @@ export class UpdateTenantDto {
 
 export class TenantResponseDto {
   @ApiProperty({ example: 'c1a2b3c4-d5e6-7890-abcd-ef1234567890' })
-  id: string;
+  id!: string;
 
   @ApiProperty({ example: 'Acme Corporation' })
-  name: string;
+  name!: string;
 
   @ApiProperty({ example: 'acme-corp' })
-  slug: string;
+  slug!: string;
 
   @ApiProperty({ example: '2026-01-15T00:00:00.000Z' })
-  createdAt: string;
+  createdAt!: string;
 
   @ApiProperty({ example: '2026-01-15T00:00:00.000Z' })
-  updatedAt: string;
+  updatedAt!: string;
 }

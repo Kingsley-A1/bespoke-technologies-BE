@@ -8,20 +8,20 @@ export enum UserRole {
 
 export class UserResponseDto {
   @ApiProperty({ example: 'u-001' })
-  id: string;
+  id!: string;
 
   @ApiProperty({ example: 'admin@kingtechfoundation.com' })
-  email: string;
+  email!: string;
 
   @ApiProperty({ example: 'John Doe' })
-  fullName: string;
+  fullName!: string;
 
   @ApiProperty({ enum: UserRole, example: UserRole.ADMIN })
-  role: UserRole;
+  role!: UserRole;
 
   @ApiProperty({ example: 'c1a2b3c4-d5e6-7890-abcd-ef1234567890' })
-  tenantId: string;
+  tenantId!: string;
 
   @ApiProperty({ example: '2026-01-15T00:00:00.000Z' })
-  createdAt: string;
+  createdAt!: string;
 }
