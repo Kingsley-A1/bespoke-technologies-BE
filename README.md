@@ -4,7 +4,7 @@ The REST API for King Tech Foundation, built with NestJS 11 and TypeScript.
 
 ## Live API
 
-**Production (Railway):** *(run the deploy steps below)*
+**Production (Railway):** _(run the deploy steps below)_
 
 ## Tech Stack
 
@@ -17,10 +17,10 @@ The REST API for King Tech Foundation, built with NestJS 11 and TypeScript.
 
 ## Endpoints
 
-| Method | Route | Description |
-|--------|-------|-------------|
-| `GET` | `/health` | Health check (used by Railway) |
-| `POST` | `/contact` | Submit contact form |
+| Method | Route      | Description                    |
+| ------ | ---------- | ------------------------------ |
+| `GET`  | `/health`  | Health check (used by Railway) |
+| `POST` | `/contact` | Submit contact form            |
 
 ## Getting Started
 
@@ -38,11 +38,11 @@ Swagger: http://localhost:3001/api
 cp .env.example .env
 ```
 
-| Variable | Description |
-|----------|-------------|
-| `PORT` | Server port (default: 3001) |
-| `NODE_ENV` | `development` or `production` |
-| `FRONTEND_URL` | Frontend URL for CORS |
+| Variable       | Description                   |
+| -------------- | ----------------------------- |
+| `PORT`         | Server port (default: 3001)   |
+| `NODE_ENV`     | `development` or `production` |
+| `FRONTEND_URL` | Frontend URL for CORS         |
 
 ## Build
 
